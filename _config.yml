@@ -1,14 +1,14 @@
 #Sample _config.yml
 
-title: consolo
+title: Zen-Dosha
 author:
- name: Jay Doe
+ name: Warren G. Martin
  email: 
-   personal: example@personal.com
-   school: example@school.edu
- github_username: octocat
+   personal: example@personal
+   school: example@school
+ github_username: zendosha
 header_pages:
- - page.md
+ - Home.md
  - another_page.md
 message: Write some cool footer message here
 style: dark
