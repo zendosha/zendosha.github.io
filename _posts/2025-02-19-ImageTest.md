@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Image Post Template"
-date: 2024-02-19 12:00:00 +0000
+date: 2025-02-19 12:01:00 +0000
 images:
   - path: /assets/images/1551457847892.png
     caption: "Sample image 1"
