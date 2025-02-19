@@ -8,8 +8,9 @@ author:
    school: example@school
  github_username: zendosha
 header_pages:
- - Home.md
- - another_page.md
+ - index.md
+ - posts.md
+ - about.md
 message: Write some cool footer message here
 style: dark
 google_analytics: G-NNNNNNNNNN
