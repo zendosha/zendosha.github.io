@@ -1,7 +1,27 @@
 ---
 title: /root
-layout: home
+layout: default
 permalink: /root/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<h1>{{ site.title }}</h1>
+<p>{{ site.message }}</p>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li class="post-item{% if forloop.first %} recent-post{% endif %}">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date: "%B %d, %Y %H:%M %z" }}</p>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const recentPost = document.querySelector('.recent-post');
+  if (recentPost) {
+    recentPost.classList.add('shimmer');
+  }
+});
+</script>
