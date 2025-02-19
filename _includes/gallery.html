@@ -1,0 +1,13 @@
+<div class="gallery" style="--columns: {{ include.columns | default: 3 }}">
+    {% for image in include.gallery %}
+    <figure class="gallery-item">
+        <a href="{{ image.path }}" class="lightbox">
+            <img src="{{ image.thumbnail | default: image.path }}" 
+                 alt="{{ image.caption | default: 'Gallery image' }}">
+        </a>
+        {% if image.caption %}
+        <figcaption>{{ image.caption }}</figcaption>
+        {% endif %}
+    </figure>
+    {% endfor %}
+</div>
