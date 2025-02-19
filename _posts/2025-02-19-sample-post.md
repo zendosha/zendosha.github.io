@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sample Post to check time"
-date: $(date +"%Y-%m-%d %H:%M:%S %z")
+date: 2024-02-19 12:00:00 +0000
 ---
 
 This is a sample post to test the setup.

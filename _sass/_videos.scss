@@ -1,0 +1,49 @@
+.video-container {
+    margin: 2rem 0;
+    text-align: center;
+
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+    }
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+
+    .video-gallery-item {
+        margin: 0;
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        figcaption {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 0.5rem;
+            color: var(--text-muted);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .video-gallery {
+        --columns: 1;
+    }
+}

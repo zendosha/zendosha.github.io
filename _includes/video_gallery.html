@@ -1,0 +1,14 @@
+<div class="video-gallery" style="--columns: {{ include.columns | default: 2 }}">
+    {% for video in include.gallery %}
+    <figure class="video-gallery-item">
+        <a href="{{ video.url }}" class="lightbox">
+            <iframe src="{{ video.url }}" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+        </a>
+        {% if video.caption %}
+        <figcaption>{{ video.caption }}</figcaption>
+        {% endif %}
+    </figure>
+    {% endfor %}
+</div>

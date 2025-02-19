@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Image Post Template"
-date: $(date +"%Y-%m-%d %H:%M:%S %z")
+date: 2024-02-19 12:00:00 +0000
 images:
   - path: /assets/images/1551457847892.png
     caption: "Sample image 1"
