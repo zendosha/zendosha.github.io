@@ -1,5 +1,8 @@
 ---
 layout: default
 ---
-
-{{ content }}
+<article class="post {% if page.date == site.posts.first.date %}recent-post shimmer-effect{% endif %}">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%Y-%m-%d %H:%M:%S %z" }}</p>
+  {{ content }}
+</article>
