@@ -1,7 +1,7 @@
 ---
-title: All Posts
+title: "Blog"
 layout: page
-permalink: /posts/
+permalink: /blog/
 ---
 
 {% for post in site.posts %}

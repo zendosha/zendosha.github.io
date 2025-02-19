@@ -1,7 +1,25 @@
 ---
-title: "/cv"
+title: "CV"
 layout: cv
 permalink: /cv/
+experience:
+  - title: "Software Engineer"
+    company: "Company Name"
+    period: "2020 - Present"
+    description: "Key responsibilities and achievements"
+    technologies: "Python, JavaScript, Docker"
+
+education:
+  - degree: "Your Degree"
+    school: "University Name"
+    period: "2015 - 2019"
+    description: "Relevant coursework or achievements"
+
+skills:
+  - category: "Programming Languages"
+    items: ["Python", "JavaScript", "HTML", "CSS"]
+  - category: "Tools & Technologies"
+    items: ["Git", "Docker", "AWS", "Linux"]
 ---
-## Lorem ipsum 
-dolor sit amet, consectetur adipiscing elit. Cras sit amet eros massa. Fusce aliquet nisl vel ipsum sagittis suscipit. In hac habitasse platea dictumst. Nullam rhoncus neque ac pretium tincidunt. Nulla facilisi. Integer laoreet ante a felis mattis commodo. Nunc lacinia orci augue, vel luctus massa commodo nec.
+
+I am a software engineer with X years of experience in web development and cloud technologies. Passionate about building scalable solutions and continuous learning.
