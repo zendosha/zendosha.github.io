@@ -1,6 +1,6 @@
 #Sample _config.yml
 
-title: Zen-Dosha
+title: Zen-Doshay
 author:
  name: Warren G. Martin
  email: 
@@ -9,11 +9,13 @@ author:
  github_username: zendosha
 header_pages:
  - index.md
- - posts.md
+ - blog.md
  - about.md
-message: Write some cool footer message here
+ - cv.md
+message: Comparison is the theif of joy.
 style: dark
 google_analytics: G-NNNNNNNNNN
 
 
 remote_theme: zendosha/zendosha.github.io
+remote_theme: Forthoney/consolo

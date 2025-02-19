@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="cv-container">
+    <section class="cv-section" id="summary">
+        <h2>Summary</h2>
+        {{ content }}
+    </section>
+
+    <section class="cv-section" id="experience">
+        <h2>Experience</h2>
+        {% for job in page.experience %}
+        <div class="cv-item">
+            <h3>{{ job.title }}</h3>
+            <p class="meta">{{ job.company }} | {{ job.period }}</p>
+            <p>{{ job.description }}</p>
+            {% if job.technologies %}
+            <p class="technologies">Technologies: {{ job.technologies }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </section>
+
+    <section class="cv-section" id="education">
+        <h2>Education</h2>
+        {% for edu in page.education %}
+        <div class="cv-item">
+            <h3>{{ edu.degree }}</h3>
+            <p class="meta">{{ edu.school }} | {{ edu.period }}</p>
+            {% if edu.description %}
+            <p>{{ edu.description }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </section>
+
+    <section class="cv-section" id="skills">
+        <h2>Skills</h2>
+        {% for category in page.skills %}
+        <div class="skill-category">
+            <h3>{{ category.category }}</h3>
+            <p>{{ category.items | join: ", " }}</p>
+        </div>
+        {% endfor %}
+    </section>
+</div>
