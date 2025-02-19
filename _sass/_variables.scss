@@ -1,0 +1,17 @@
+:root {
+  --text-color: #333;
+  --text-muted: #666;
+  --background-color: #fff;
+  --accent-color: #0066cc;
+  --link-color: #0066cc;
+  --link-hover-color: #003366;
+}
+
+[data-theme="dark"] {
+  --text-color: #eee;
+  --text-muted: #999;
+  --background-color: #222;
+  --accent-color: #66b3ff;
+  --link-color: #66b3ff;
+  --link-hover-color: #99ccff;
+}
