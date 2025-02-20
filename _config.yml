@@ -1,6 +1,6 @@
 #Sample _config.yml
 
-title: Zen-Doshay
+title: Zen-Dosha
 author:
  name: Warren G. Martin
  email: 
@@ -10,8 +10,8 @@ author:
 header_pages:
  - index.md
  - blog.md
- - about.md
  - cv.md
+ - about.md
 message: Comparison is the theif of joy.
 style: dark
 google_analytics: G-NNNNNNNNNN
